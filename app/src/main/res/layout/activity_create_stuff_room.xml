@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="방만들기"
+        android:textColor="#5380E8"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="37dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/food"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:text="음식" />
+
+                <RadioButton
+                    android:id="@+id/stuff"
+                    android:layout_width="267dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="물건" />
+
+                <RadioButton
+                    android:id="@+id/ott"
+                    android:layout_width="219dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="OTT" />
+
+                <RadioButton
+                    android:id="@+id/taxi"
+                    android:layout_width="219dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Taxi" />
+
+            </LinearLayout>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/foodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="상품명"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/foodAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="제품 링크"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/stuffPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="상품 가격"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/stuffAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="배송지"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/createRoomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="방만들기" />
+    </LinearLayout>
+
+</LinearLayout>
